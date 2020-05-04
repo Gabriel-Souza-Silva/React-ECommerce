@@ -5,7 +5,7 @@ import FormInput from '../form-input/form-input.component'
 import CustomButton from '../custom-button/custom-button.component'
 
 
-import {signInWithGoogle} from '../../firebase/firebase.utils'
+import {auth,signInWithGoogle} from '../../firebase/firebase.utils'
 
 export default class SignIn extends Component {
 
@@ -18,8 +18,17 @@ export default class SignIn extends Component {
         }
     }    
 
-    handleSubmit = (e) =>{
+    handleSubmit = async (e) =>{
         e.preventDefault()
+
+        const {email,password} = this.state
+
+        try {
+            await auth.signInWithEmailAndPassword(email,password)
+            this.setState({email: '', password: ''})
+        } catch (error) {
+            console.log(error)
+        }
 
         this.setState({email: '',password: ''})
     }
@@ -52,9 +61,10 @@ export default class SignIn extends Component {
                         required
                         label="Password"
                         handleChange={this.handleChange}/>
-
-                    <CustomButton type="submit"> Sign In {/* children do botao é usado nas props */} </CustomButton>
-                    <CustomButton onClick={signInWithGoogle}> Sign In With Google</CustomButton>
+                    <div className="buttons">
+                        <CustomButton type="submit"> Sign In {/* children do botao é usado nas props */} </CustomButton>
+                        <CustomButton type="button" onClick={signInWithGoogle} isGoogleSignIn> SignIn With Google</CustomButton>
+                    </div>
                 </form>
             </div>
         );
