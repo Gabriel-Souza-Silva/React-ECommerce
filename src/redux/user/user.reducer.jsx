@@ -1,11 +1,13 @@
 //state é o paretro que representa o estado atual, nao o atualizado
+import {UsertActionTypes} from './user.types'
+
 const INITIAL_STATE = {
     currentUser: null
 };
 
 const userReducer = (state = INITIAL_STATE, action) => {
 switch (action.type) {
-    case 'SET_CURRENT_USER':
+    case UsertActionTypes.SET_CURRENT_USER:
     return {
         ...state,
         currentUser: action.payload
