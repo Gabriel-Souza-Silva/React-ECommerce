@@ -5,12 +5,12 @@ export const addItemToCart = (cartItems, cartItemToAdd) =>{
 
     if(existingCartitem){
         return cartItems.map(cartItem => 
-            cartItem.id == cartItemToAdd.id
+            cartItem.id === cartItemToAdd.id
             ? {...cartItem, quantity: cartItem.quantity + 1}
-            : {cartItem}
+            : cartItem
         )
     }
 
     //retorna 1 por que caso ja existir o codigo vai retornar dentro do if existingCartitem
-    return [...cartItems,{...cartItemToAdd, quantity: 1}]
+    return [...cartItems, { ...cartItemToAdd, quantity: 1 }];
 }
