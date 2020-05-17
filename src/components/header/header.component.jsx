@@ -8,6 +8,11 @@ import './header.styles.scss'
 import CartIcon from '../cart-icon/cart-icon.component'
 import CartDropdown from '../cart-dropdown/cart-dropdown.component'
 
+//Reselect 
+import {createStructuredSelector} from 'reselect'
+import {selectCartHidden} from '../../redux/card/card.selectors'
+import {selectCurrentUser} from '../../redux/user/user.selector'
+
 const Header = ({currentUser, hidden}) => (
     <div className="header">
         <Link className='logo-container' to='/'>
@@ -31,9 +36,20 @@ const Header = ({currentUser, hidden}) => (
     </div>
 )
 
+//#region Renderizando toda vez que um campo do state do redux é alterado
+/*
 const mapStateToProps = ({user: {currentUser},cart: {hidden}}) => ({
     currentUser: currentUser,
     hidden: hidden
 });
+*/
+//#endregion
+
+//Utilzia o createStructuredSelector para facilitar a escrita de valor: metodo(state)
+const mapStateToProps = createStructuredSelector({
+    currentUser: selectCurrentUser,
+    hidden: selectCartHidden 
+});
+
 
 export default connect(mapStateToProps)(Header);

@@ -11,6 +11,9 @@ import {auth,createUserProfileDocument} from './firebase/firebase.utils'
 
 import {setCurrentUser} from './redux/user/user.actions'
 
+import {createStructuredSelector} from 'reselect'
+import {selectCurrentUser} from './redux/user/user.selector'
+
 class App extends Component{
   /*
   constructor(){
@@ -67,8 +70,18 @@ class App extends Component{
   }
 }
 
+//#region Renderizando toda vez que um campo do state do redux é alterado
+/*
 const mapStateToProps = ({ user }) => ({
   currentUser : user.currentUser
+})
+
+
+*/
+//#endregion
+
+const mapStateToProps = createStructuredSelector({
+  currentUser : selectCurrentUser
 })
 
 const mapDispatchToProps = dispatch => ({

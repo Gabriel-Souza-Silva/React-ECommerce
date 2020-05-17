@@ -1,0 +1,102 @@
+[33mcommit 75f1d1dd3bde05c06fda54fa6a3ea7bcd731d68d[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: Gabriel <Gabriel@DESKTOP-GGROU04>
+Date:   Sat May 16 20:19:13 2020 -0300
+
+    Curso React - Aula 114-115 - Adicionando cart-item
+
+[33mcommit 885a927b24e0247bf351d38ac3ee0b58cbdfe336[m
+Author: Gabriel <Gabriel@DESKTOP-GGROU04>
+Date:   Sat May 16 11:05:07 2020 -0300
+
+    Curso React - Aula 111- 113 - Adicionando redux para add to cart
+
+[33mcommit 66abeb7c86f08ed6b4508f46eadd9daa963867de[m
+Author: Gabriel <Gabriel@DESKTOP-GGROU04>
+Date:   Thu May 14 16:38:01 2020 -0300
+
+    Curso React - Aula 110 - Adicionando toogle para carlist
+
+[33mcommit 4f4c444f7e186c3f76509b84b081e08f4bf018de[m
+Author: Gabriel Silva <gabriel.silva@sinqia.com.br>
+Date:   Wed May 13 14:38:06 2020 -0300
+
+    Curso React - Aula 107 - 109 - Inicio carrinho
+
+[33mcommit 9866889c960cf9574ae2fde8feee6934393464f5[m
+Author: Gabriel <Gabriel@DESKTOP-GGROU04>
+Date:   Sun May 10 08:52:12 2020 -0300
+
+    Curso React - Aula 107 - Redirecionando caso logado
+
+[33mcommit c9bc1a750a9049cb76f0240734910e38d3c0c66c[m
+Author: Gabriel <Gabriel@DESKTOP-GGROU04>
+Date:   Sat May 9 17:39:55 2020 -0300
+
+    Corrigindo erro signout
+
+[33mcommit f1f58e5c983e5f356743183562c27cf5dd75704e[m
+Author: Gabriel <Gabriel@DESKTOP-GGROU04>
+Date:   Sat May 9 17:35:56 2020 -0300
+
+    Curso React - Aula 97 - 106
+
+[33mcommit a5547327c2a8d996a0c5cecfc4480dc92b8e90ff[m
+Author: Gabriel <Gabriel@DESKTOP-GGROU04>
+Date:   Mon May 4 19:02:10 2020 -0300
+
+    Curso React - Aula 87 - 97 - Implementando formulários
+
+[33mcommit bb898e64ce8761dfe566b0636b71cac42a30e6a8[m
+Author: Gabriel <Gabriel@DESKTOP-GGROU04>
+Date:   Fri May 1 10:45:03 2020 -0300
+
+    Curso React - Aula 79-86 - Adicionando página login e firebase
+
+[33mcommit e53238aa39a6290cdbf1197dbd4983dae794b0f0[m
+Author: Gabriel <Gabriel@DESKTOP-GGROU04>
+Date:   Sun Apr 26 20:40:04 2020 -0300
+
+    Curso React - Aula 73- Adicionando header
+
+[33mcommit 866d5f91adafd61363c66702f50e26ae7846e588[m
+Author: Gabriel <Gabriel@DESKTOP-GGROU04>
+Date:   Sun Apr 26 09:22:11 2020 -0300
+
+    Curso React - Aula 75 - Criando components para ShopPage
+
+[33mcommit 37e191398da91d43c8246646a9ecbfbc142cf76b[m
+Author: Gabriel <Gabriel@DESKTOP-GGROU04>
+Date:   Sat Apr 25 10:02:45 2020 -0300
+
+    Curso React - Aula 66-69 - Adicionando rotas ao projeto
+
+[33mcommit 578f264568a822a999ae7268c1192f9b68ee724c[m
+Author: Gabriel <Gabriel@DESKTOP-GGROU04>
+Date:   Wed Apr 22 16:57:23 2020 -0300
+
+    Curso React - Aula 63-65 - Estilizando components
+
+[33mcommit cdd162a698babe3fac156e7071baa9eeb323089d[m
+Merge: 5f1fadf 29029cf
+Author: Gabriel <Gabriel@DESKTOP-GGROU04>
+Date:   Tue Apr 21 09:30:10 2020 -0300
+
+    Diferença ignore e readme
+
+[33mcommit 5f1fadf7d5d7689ce3410bba7fcc0072b398301b[m
+Author: Gabriel <Gabriel@DESKTOP-GGROU04>
+Date:   Tue Apr 21 09:25:36 2020 -0300
+
+    Criando estrutura da pagina principal
+
+[33mcommit 29029cfe06259d2a57f47fb6475e3a7699d1fa44[m
+Author: Gabriel-Souza-Silva <gabrielccpuc@gmail.com>
+Date:   Tue Apr 21 09:23:38 2020 -0300
+
+    Initial commit
+
+[33mcommit 5c770ee855dd90aae1b42887e1568ad97459cdd6[m
+Author: Gabriel <Gabriel@DESKTOP-GGROU04>
+Date:   Tue Apr 21 08:59:29 2020 -0300
+
+    Initialize project using Create React App
