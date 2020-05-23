@@ -10,17 +10,30 @@ import {connect} from 'react-redux'
 //Reselect Labrary
 import {selectCartItems} from '../../redux/card/card.selectors'
 import {createStructuredSelector} from 'reselect'
+import {toogleCartHidden} from '../../redux/card/card.actions'
+ 
+//react-router-dom
+import {withRouter} from 'react-router-dom'
 
-const CartDropdown = ({cartItems}) => (
+//dispatch é passada como props quando o connect tem o segundo argumento(mapDispatchToProps) como nulo
+const CartDropdown = ({cartItems, history, dispatch}) => (
     <div className="cart-dropdown">
         <div className="cart-items">
             {
-                cartItems.map(cartItem => 
-                    <CartItem key={cartItem.id} item={cartItem}/>
-                )
+                cartItems.length 
+                ? 
+                    cartItems.map(cartItem => 
+                        <CartItem key={cartItem.id} item={cartItem}/>
+                    )
+                :
+                    <span className="empty-message">Your cart is empty</span>
+
             }
         </div>
-        <CustomButton>GO TO CHECKOUT</CustomButton>
+        <CustomButton onClick={()=> {
+            history.push('/checkout');
+            dispatch(toogleCartHidden())
+        }}>GO TO CHECKOUT</CustomButton>
     </div>
 )   
 
@@ -37,4 +50,6 @@ const mapStateToProps = createStructuredSelector({
     cartItems: selectCartItems
 })
 
-export default connect(mapStateToProps)(CartDropdown);
+//COMANDO NECESSÁRIO PARA RECEBER PROPRIEDADES DE ROTA POR MEIO DAS PROPS(withRouter)
+//UTILIZA NESSE CASO PARA TER ACESSO AO HISTORY E IR PARA A PAGINA DE CHECKOUT
+export default withRouter(connect(mapStateToProps)(CartDropdown));
