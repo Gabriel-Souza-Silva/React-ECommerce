@@ -45,6 +45,9 @@ class App extends Component{
       }
 
       setCurrentUser(userAuth);
+      //insere apenas o titulo e items das collections 
+      //insere os collections 
+      //addCollectionAndDocuments('collections', collectionsArray.map(({title, items}) => ({title, items}) ))
     });
   }
 

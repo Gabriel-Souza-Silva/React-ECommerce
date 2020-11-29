@@ -18,7 +18,7 @@ import {withRouter} from 'react-router-dom'
 //dispatch é passada como props quando o connect tem o segundo argumento(mapDispatchToProps) como nulo
 const CartDropdown = ({cartItems, history, dispatch}) => (
     <div className="cart-dropdown">
-        <div className="cart-items">
+        <div className="cart-items ">
             {
                 cartItems.length 
                 ? 
@@ -33,7 +33,7 @@ const CartDropdown = ({cartItems, history, dispatch}) => (
         <CustomButton onClick={()=> {
             history.push('/checkout');
             dispatch(toogleCartHidden())
-        }}>GO TO CHECKOUT</CustomButton>
+        }}>CHECKOUT</CustomButton>
     </div>
 )   
 
